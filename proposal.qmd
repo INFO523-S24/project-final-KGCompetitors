@@ -2,7 +2,7 @@
 title: "Proposal title"
 subtitle: "Proposal"
 author: 
-  - name: "Team Name - Team member 1, Team member 2,..."
+  - name: KG Competitors- Maksim Kulik, Remi Hendershott, Priom Mahmud, Kommareddy Monica Tejaswi, Surya Vardhan Dama, & Gorantla Sai Laasya
     affiliations:
       - name: "School of Information, University of Arizona"
 description: "Project description"
