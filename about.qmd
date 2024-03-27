@@ -5,12 +5,18 @@ editor: visual
 jupyter: python3
 ---
 
-This project was developed by **\[Team Name\]** For [INFO 523 - Data Mining and Discovery](https://datamineaz.org/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
+This project was developed by **\[KG Competitors\]** For [INFO 523 - Data Mining and Discovery](https://datamineaz.org/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
 
 -   Remi Hendershott: First year Master's student in Information Science with focus on Human Computer Interaction, with end goal being working in UX/UI Design. 
 
--   Team member 2: One sentence description of Team member 2 (e.g., year, major, etc.).
+-   Maksim Kulik: One sentence description of Team member 2 (e.g., year, major, etc.).
 
--   Team member 3: One sentence description of Team member 3 (e.g., year, major, etc.).
+-   Priom Mahmud: One sentence description of Team member 3 (e.g., year, major, etc.).
 
--   Team member 4: One sentence description of Team member 4 (e.g., year, major, etc.).
+-   Kommareddy Monica Tejaswi: One sentence description of Team member 4 (e.g., year, major, etc.).
+
+-   Surya Vardhan Dama:
+
+-   Gorantla Sai Laasya:
+
+-   Shashank Yada
