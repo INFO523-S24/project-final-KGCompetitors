@@ -1,11 +1,11 @@
 ---
-title: "Proposal title"
+title: "Personal Data Detection"
 subtitle: "Proposal"
 author: 
-  - name: KG Competitors- Maksim Kulik, Remi Hendershott, Priom Mahmud, Kommareddy Monica Tejaswi, Surya Vardhan Dama, & Gorantla Sai Laasya
+  - name: KG Competitors- Maksim Kulik, Remi Hendershott, Priom Mahmud, Kommareddy Monica Tejaswi, Surya Vardhan Dama, Gorantla Sai Laasya, & Shashank Yada
     affiliations:
       - name: "School of Information, University of Arizona"
-description: "Project description"
+description: "Our team is participating in a Kaggle Competition with the the objective being to create a model capable of identifying personally identifiable information (PII) within student writing."
 format:
   html:
     code-tools: true
