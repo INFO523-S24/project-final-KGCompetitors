@@ -32,14 +32,20 @@ import numpy as np
 #| message: false
 ```
 
-A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
 
-Make sure to load the data and use inline code for some of this information.
+Our dataset comes from the Kaggle competition we are competeing in, and it consists of around 22,000 essays submitted by students, all of which were written in response to a single assignment prompt, which required students to apply course concepts to a real-world scenario. We selected this dataset/competition because certain team members possess experience in NLP tasks, and it presents an opportunity to impart new skills to the rest of the team while tackling a tangible problem aligned with Kaggle's objective of detecting personally identifiable information (PII) within these essays. 
+
+To safeguard student privacy, original PII in the dataset has been substituted with surrogate identifiers of similar types using a partially automated procedure. 70% of essays have been set aside for the test set, resulting in our team using other datasets to supplement our work for this project. (Supplemental dataset search is in progress). 
+
+The competition data is provided in JSON format, containing various components such as a document identifier, the complete essay text, a token list, details about whitespace, and token annotations. The documents underwent tokenization using the SpaCy English tokenizer. 
+
+Token labels adhere to the BIO (Beginning, Inner, Outer) format. When a token represents the start of a personally identifiable information (PII) entity, its type is prefixed with "B-". For tokens that continue an entity, they are prefixed with "I-". Tokens that do not pertain to PII are labeled as "O".
 
 ## Questions
 
-The two questions you want to answer.
+1. Can we develop a model that successfully detects personally identifiable information (PII) in student writing?
+2. How can we evaluate the model's performance effectively? Which metrics are most appropriate for PII detection tasks? 
 
 ## Analysis plan
 
--   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+
