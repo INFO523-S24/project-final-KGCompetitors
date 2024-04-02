@@ -5,7 +5,7 @@ author:
   - name: KG Competitors
     affiliations:
       - name: "School of Information, University of Arizona"
-description: "Our team is participating in a Kaggle Competition with the the objective being to create a model capable of identifying personally identifiable information (PII) within student writing. The existence of PII poses a formidable barrier to the analysis and creation of openly accessible datasets aimed at advancing education, as making such data publicly available exposes students to potential risks. To mitigate these risks, it is imperative to thoroughly screen and cleanse educational data of any PII prior to its public release, a process that could be optimized and facilitated through the application of data science techniques."
+description: "Our team is participating in a Kaggle Competition with the objective to create a model capable of detecting personally identifiable information (PII) within student writing. The existence of PII poses a formidable barrier to the analysis and creation of openly accessible datasets aimed at advancing education, as making such data publicly available exposes students to potential risks. To mitigate these risks, it is imperative to thoroughly screen and cleanse educational data of any PII prior to its public release, a process that could be optimized and facilitated through the application of data science techniques."
 format:
   html:
     code-tools: true
@@ -23,14 +23,38 @@ jupyter: python3
 #| label: load-pkgs
 #| message: false
 import numpy as np
+from zipfile import ZipFile
+import json
+import pandas as pd
 ```
 
 ## Dataset
+GitHub does not allow files over 100 mb, so we store the compressed version of the dataset and decompress it temporarily to show what the data looks like.
+```{python}
+#| label: unzip-dataset
+#| message: false
 
+with ZipFile("data/essays.zip", 'r') as z: 
+    z.extractall(path="data/temp")
+```
+
+Json is not the most convenient format for displaying information, so we need to transform it into a DataFrame. The majority of tokens are labelled as "O", meaning they do not constitute PII. We will only select those tokens and theirs labels that do constitute personal information. 
 ```{python}
 #| label: load-dataset
 #| message: false
+
+data = json.load(open('data/temp/train.json'))
+
+labels = []
+tokens = []
+for i in data:
+    labels.extend([j for j in i['labels'] if j!='O'])
+    tokens.extend([k for j, k in zip(i['labels'],i['tokens']) if j!='O'])
+
+data = pd.DataFrame({'labels':labels,'tokens':tokens})
+data.head()
 ```
+
 
 
 Our dataset comes from the Kaggle competition we are competeing in, and it consists of around 22,000 essays submitted by students, all of which were written in response to a single assignment prompt, which required students to apply course concepts to a real-world scenario. We selected this dataset/competition because certain team members possess experience in NLP tasks, and it presents an opportunity to impart new skills to the rest of the team while tackling a tangible problem aligned with Kaggle's objective of detecting personally identifiable information (PII) within these essays. 
