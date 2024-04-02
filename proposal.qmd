@@ -83,6 +83,6 @@ Token labels adhere to the BIO (Beginning, Inner, Outer) format. When a token re
 | Proposal Description | Completed | Remi Hendershott | 03 Apr 2024 | Moderate |  Concise summary outlining the main idea of a proposal |
 | Dataset | In progress | Makism Kulki | 03 Apr 2024 | Moderate | Uploading and Loading the Dataset |
 | Questions | In progress | Everyone | 03 Apr 2024 | Moderate |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-| Analysis/Approach | In progress | Everyone | 03 Apr 2024 | Monica Tejaswi, Remi Hendershott, G Sai Laasya |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-|Proposal Peer Review | Everyone |     | 03 Apr 2024 | Moderate | Reviewing Other Teams |
+| Analysis | In progress | Everyone | 03 Apr 2024 | Monica Tejaswi, Remi Hendershott, G Sai Laasya |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
+|Proposal Peer Review |Pending | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
 
