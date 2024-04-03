@@ -119,8 +119,6 @@ To safeguard student privacy, original PII in the dataset has been substituted w
 
 The competition data is provided in JSON format, containing various components such as a document identifier, the complete essay text, a token list, details about whitespace, and token annotations. The documents underwent tokenization using the SpaCy English tokenizer. 
 
-Token labels adhere to the BIO (Beginning, Inner, Outer) format. When a token represents the start of a personally identifiable information (PII) entity, its type is prefixed with "B-". For tokens that continue an entity, they are prefixed with "I-". Tokens that do not pertain to PII are labeled as "O".
-
 ## Questions
 
 1. Can we develop a model that successfully detects personally identifiable information (PII) in student writing?
