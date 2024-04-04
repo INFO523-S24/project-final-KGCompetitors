@@ -5,7 +5,7 @@ author:
   - name: KG Competitors
     affiliations:
       - name: "School of Information, University of Arizona"
-description: "Our team is participating in a Kaggle Competition with the objective to create a model capable of detecting personally identifiable information (PII) within student writing. The existence of PII poses a formidable barrier to the analysis and creation of openly accessible datasets aimed at advancing education, as making such data publicly available exposes students to potential risks. To mitigate these risks, it is imperative to thoroughly screen and cleanse educational data of any PII prior to its public release, a process that could be optimized and facilitated through the application of data science techniques."
+description: "Our team is participating in a Kaggle Competition with the higher goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing. The existence of PII poses a formidable barrier to the analysis and creation of openly accessible datasets aimed at advancing education, as making such data publicly available exposes students to potential risks. To mitigate these risks, it is imperative to thoroughly screen and cleanse educational data of any PII prior to its public release, a process that could be optimized and facilitated through the application of data science techniques."
 format:
   html:
     code-tools: true
@@ -126,6 +126,7 @@ The competition data is provided in JSON format, containing various components s
 
 ## Analysis plan
 
+Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing.
 
 
 
