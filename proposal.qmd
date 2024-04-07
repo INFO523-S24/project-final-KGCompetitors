@@ -128,6 +128,8 @@ The competition data is provided in JSON format, containing various components s
 
 Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing.
 
+We will implement a robust data processing pipeline and model training approach. We'll tokenize text and convert it into integers for model compatibility, adding special tokens like [CLS], [SEP], and [PAD] for enhanced input handling. Leveraging tf.data.Dataset, we'll create separate data loaders for training and validation. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction. Training will be conditionally executed based on the `CFG.train` flag, with progress monitored through epoch updates. Test data will undergo preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference. Post-processing of predictions will filter unwanted parts, ensuring desired output criteria are met.
+
 
 
 
