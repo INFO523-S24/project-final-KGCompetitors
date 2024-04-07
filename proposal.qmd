@@ -139,7 +139,7 @@ Our team is participating in a Kaggle Competition with the higher end goal and o
 | Dataset | In progress | Makism Kulki | 03 Apr 2024 | Moderate | Uploading and Loading the Dataset |
 | Questions | In progress | Everyone | 03 Apr 2024 | Moderate |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
 | Analysis | In progress | Monica Tejaswi, Remi Hendershott, G Sai Laasya | 03 Apr 2024 | Moderate|  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-|Proposal Peer Review |Pending | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
+|Proposal Peer Review | Completed | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
 
 # Repo Organization
 -   **.github/:** specifically designated for GitHub-related files, including workflows, actions, and templates customized for managing issues.
