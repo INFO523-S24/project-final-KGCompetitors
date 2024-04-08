@@ -128,10 +128,25 @@ The competition data is provided in JSON format, containing various components s
 
 ## Analysis plan
 
-Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing. Under our GitHub repository, there is a file titled "analysis", which contains a jupyter notebook of data and task description alongwith a DeBERTa model run for our first attempt at creating a model to detect PII in student writing. We selected DeBERTa as the first model, a transformer based neural language model that has two distinct features.The first is it's disentangled attention mechanism which involves representing each word with two vectors, one encoding its content and the other its position, and computing attention weights between words using disentangled matrices based on their content and relative positions. The second is it's improved mask decoder, which replaces the output softmax layer to predict masked tokens during model pre-training.
+### Problem Introduction
 
-We will implement a robust data processing pipeline and model training approach. We'll tokenize text and convert it into integers for model compatibility, adding special tokens like [CLS], [SEP], and [PAD] for enhanced input handling. Leveraging tf.data.Dataset, we'll create separate data loaders for training and validation. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction. Training will be conditionally executed based on the `CFG.train` flag, with progress monitored through epoch updates. Test data will undergo preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference. Post-processing of predictions will filter unwanted parts, ensuring desired output criteria are met.
+Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing. Generally, text classification tasks are focussed towards sentence classification.
+However, our task focusses on word classification, where a word appearing in some text belongs to one of the predefined categories similar to a multiclass classification problem. This formulation is also called, "Named Entity Recognition". 
 
+
+### Problem formulation
+
+*   Data Processing: Since, computational models do not understand raw text,  we will tokenize text using a language model tokenizer which would convert the words it into integers for model compatibility, adding special tokens like [CLS], [SEP], and [PAD] for enhanced input handling. 
+Subsequently, each token would be mapped to a n-dimensional  vector representation. Leveraging the keras-NLP and tensorflow's tf.data.Dataset function, we will create separate data loaders for training and validation.
+
+*   Model Training: We will be using language models such as DeBERTa, Roberta etc which are transformer based neural language models having two distinct features. The first is it's disentangled attention mechanism which involves representing each word with two vectors, one encoding its content and the other its position, and computing attention weights between words 
+using disentangled matrices based on their content and relative positions. The second is it's improved mask decoder, which replaces the output softmax layer to predict masked tokens during model training. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction. 
+
+Training will be conditionally executed based on the `CFG.train` flag (as mentioned in the [jupyter notebook](https://github.com/INFO523-S24/project-final-KGCompetitors/blob/main/analysis/deberta_model.ipynb)), with progress monitored through epoch updates. 
+
+*   Evaluation: Validation data will undergo similar preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference. 
+
+*   Example: Under our GitHub repository, under the folder "analysis", a [jupyter notebook](https://github.com/INFO523-S24/project-final-KGCompetitors/blob/main/analysis/deberta_model.ipynb) is available which contains data and task description alongwith a DeBERTa model run for our first attempt at creating a model to detect PII in student writing. 
 
 
 ## Plan of Attack
