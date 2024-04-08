@@ -128,11 +128,9 @@ The competition data is provided in JSON format, containing various components s
 
 ## Analysis plan
 
-Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing.
+Our team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing. Under our GitHub repository, there is a file titled "analysis", which contains a jupyter notebook of data and task description alongwith a DeBERTa model run for our first attempt at creating a model to detect PII in student writing. We selected DeBERTa as the first model, a transformer based neural language model that has two distinct features.The first is it's disentangled attention mechanism which involves representing each word with two vectors, one encoding its content and the other its position, and computing attention weights between words using disentangled matrices based on their content and relative positions. The second is it's improved mask decoder, which replaces the output softmax layer to predict masked tokens during model pre-training.
 
 We will implement a robust data processing pipeline and model training approach. We'll tokenize text and convert it into integers for model compatibility, adding special tokens like [CLS], [SEP], and [PAD] for enhanced input handling. Leveraging tf.data.Dataset, we'll create separate data loaders for training and validation. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction. Training will be conditionally executed based on the `CFG.train` flag, with progress monitored through epoch updates. Test data will undergo preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference. Post-processing of predictions will filter unwanted parts, ensuring desired output criteria are met.
-
-
 
 
 
