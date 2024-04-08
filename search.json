@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "presentation.html#quarto",
+    "href": "presentation.html#quarto",
+    "title": "Project title",
+    "section": "Quarto",
+    "text": "Quarto\n\nThe presentation is created using the Quarto CLI\n## sets the start of a new slide"
+  },
+  {
+    "objectID": "presentation.html#layouts",
+    "href": "presentation.html#layouts",
+    "title": "Project title",
+    "section": "Layouts",
+    "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\n\nlike\nthis\n\nAnd add footnotes"
+  },
+  {
+    "objectID": "presentation.html#code",
+    "href": "presentation.html#code",
+    "title": "Project title",
+    "section": "Code",
+    "text": "Code\n\n\n                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                    mpg   R-squared:                       0.073\nModel:                            OLS   Adj. R-squared:                  0.070\nMethod:                 Least Squares   F-statistic:                     30.59\nDate:                Tue, 05 Dec 2023   Prob (F-statistic):           5.84e-08\nTime:                        15:26:39   Log-Likelihood:                -1346.4\nNo. Observations:                 392   AIC:                             2697.\nDf Residuals:                     390   BIC:                             2705.\nDf Model:                           1                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P&gt;|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst         35.8015      2.266     15.800      0.000      31.347      40.257\nspeed       -354.7055     64.129     -5.531      0.000    -480.788    -228.623\n==============================================================================\nOmnibus:                       27.687   Durbin-Watson:                   0.589\nProb(Omnibus):                  0.000   Jarque-Bera (JB):               18.976\nSkew:                           0.420   Prob(JB):                     7.57e-05\nKurtosis:                       2.323   Cond. No.                         169.\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
+  },
+  {
+    "objectID": "presentation.html#plots",
+    "href": "presentation.html#plots",
+    "title": "Project title",
+    "section": "Plots",
+    "text": "Plots"
+  },
+  {
+    "objectID": "presentation.html#plot-and-text",
+    "href": "presentation.html#plot-and-text",
+    "title": "Project title",
+    "section": "Plot and text",
+    "text": "Plot and text\n\n\n\nSome text\ngoes here"
+  },
+  {
+    "objectID": "presentation.html#tables",
+    "href": "presentation.html#tables",
+    "title": "Project title",
+    "section": "Tables",
+    "text": "Tables\nIf you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\n\n\n\nisland\n\n\n\nbill_length_mm\n\n\n\nbill_depth_mm\n\n\n\nflipper_length_mm\n\n\n\nbody_mass_g\n\n\n\nsex\n\n\n\n\n\n\n\n\n\n\n\n0\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.1\n\n\n\n18.7\n\n\n\n181.0\n\n\n\n3750.0\n\n\n\nMale\n\n\n\n\n\n\n\n1\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.5\n\n\n\n17.4\n\n\n\n186.0\n\n\n\n3800.0\n\n\n\nFemale\n\n\n\n\n\n\n\n2\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.3\n\n\n\n18.0\n\n\n\n195.0\n\n\n\n3250.0\n\n\n\nFemale\n\n\n\n\n\n\n\n4\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.7\n\n\n\n19.3\n\n\n\n193.0\n\n\n\n3450.0\n\n\n\nFemale\n\n\n\n\n\n\n\n5\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.3\n\n\n\n20.6\n\n\n\n190.0\n\n\n\n3650.0\n\n\n\nMale"
+  },
+  {
+    "objectID": "presentation.html#images",
+    "href": "presentation.html#images",
+    "title": "Project title",
+    "section": "Images",
+    "text": "Images\n\nImage credit: Danielle Navarro, Percolate."
+  },
+  {
+    "objectID": "presentation.html#math-expressions",
+    "href": "presentation.html#math-expressions",
+    "title": "Project title",
+    "section": "Math Expressions",
+    "text": "Math Expressions\nYou can write LaTeX math expressions inside a pair of dollar signs, e.g. $\\alpha+\\beta$ renders \\(\\alpha + \\beta\\). You can use the display style with double dollar signs:\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\\[\n\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i\n\\]\nLimitations:\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $."
+  },
+  {
+    "objectID": "presentation.html#feeling-adventurous",
+    "href": "presentation.html#feeling-adventurous",
+    "title": "Project title",
+    "section": "Feeling adventurous?",
+    "text": "Feeling adventurous?\n\nYou are welcomed to use the default styling of the slides. In fact, that’s what I expect majority of you will do. You will differentiate yourself with the content of your presentation.\nBut some of you might want to play around with slide styling. Some solutions for this can be found at https://quarto.org/docs/presentations/revealjs."
+  },
+  {
+    "objectID": "analysis/deberta_model.html#data-split",
+    "href": "analysis/deberta_model.html#data-split",
+    "title": "PII Data Detection with KerasNLP and Keras",
+    "section": "🔪 | Data Split",
+    "text": "🔪 | Data Split\nIn the following code snippet, we will split the dataset into training and testing subsets using an 80%-20% ratio.\n\n# Splitting the data into training and testing sets\ntrain_words, valid_words, train_labels, valid_labels = train_test_split(\n    words, labels, test_size=0.2, random_state=CFG.seed\n)\n\n\ntrain_words.shape, valid_words.shape, train_labels.shape, valid_labels.shape\n\n((5445,), (1362,), (5445,), (1362,))\n\n\n\n# To convert string input or list of strings input to numerical tokens\ntokenizer = keras_nlp.models.DebertaV3Tokenizer.from_preset(\n    CFG.preset,\n)\n\n# Preprocessing layer to add spetical tokens: [CLS], [SEP], [PAD]\npacker = keras_nlp.layers.MultiSegmentPacker(\n    start_value=tokenizer.cls_token_id,\n    end_value=tokenizer.sep_token_id,\n    sequence_length=10,\n)\n\n2024-04-03 01:43:17.612628: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.\n\n\n\ntf.experimental.numpy.experimental_enable_numpy_behavior()\n\n\nsample_words = words[0][:5]\nsample_tokens_int = [\n    token.tolist() for word in sample_words for token in tokenizer(word)\n]\nsample_tokens_str = [tokenizer.id_to_token(token) for token in sample_tokens_int]\n\nprint(\"words        :\", sample_words.tolist())\nprint(\"tokens (str) :\", sample_tokens_str)\nprint(\"tokens (int) :\", sample_tokens_int)\n\nwords        : ['Design', 'Thinking', 'for', 'innovation', 'reflexion']\ntokens (str) : ['▁Design', '▁Thinking', '▁for', '▁innovation', '▁reflex', 'ion']\ntokens (int) : [2169, 12103, 270, 3513, 28310, 4593]\n\n\n2024-04-03 01:43:20.523737: W external/xla/xla/service/gpu/nvptx_compiler.cc:742] The NVIDIA driver's CUDA version is 12.2 which is older than the ptxas CUDA version (12.3.107). Because the driver is older than the ptxas version, XLA is disabling parallel compilation, which may slow down compilation. You should update your NVIDIA driver or use the NVIDIA-provided CUDA forward compatibility packages.\n\n\n\npadded_sample_tokens_int = packer(np.array(sample_tokens_int))[0].tolist()\npadded_sample_tokens_str = [\n    tokenizer.id_to_token(token) for token in padded_sample_tokens_int\n]\n\nprint(\"tokens (str)        :\", sample_tokens_str)\nprint(\"padded tokens (str) :\", padded_sample_tokens_str, \"\\n\")\n\nprint(\"tokens (int)        :\", sample_tokens_int)\nprint(\"padded tokens (int) :\", padded_sample_tokens_int)\n\ntokens (str)        : ['▁Design', '▁Thinking', '▁for', '▁innovation', '▁reflex', 'ion']\npadded tokens (str) : ['[CLS]', '▁Design', '▁Thinking', '▁for', '▁innovation', '▁reflex', 'ion', '[SEP]', '[PAD]', '[PAD]'] \n\ntokens (int)        : [2169, 12103, 270, 3513, 28310, 4593]\npadded tokens (int) : [1, 2169, 12103, 270, 3513, 28310, 4593, 2, 0, 0]\n\n\n2024-04-03 01:43:21.001611: E tensorflow/core/util/util.cc:131] oneDNN supports DT_INT64 only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present."
+  },
+  {
+    "objectID": "analysis/deberta_model.html#build-train-valid-dataloader",
+    "href": "analysis/deberta_model.html#build-train-valid-dataloader",
+    "title": "PII Data Detection with KerasNLP and Keras",
+    "section": "Build Train & Valid Dataloader",
+    "text": "Build Train & Valid Dataloader\nIn the following code, we’ll create train and valid data loaders.\n\ntrain_ds = build_dataset(train_words, train_labels,  batch_size=CFG.train_batch_size,\n                         seq_len=CFG.train_seq_len, shuffle=True)\n\nvalid_ds = build_dataset(valid_words, valid_labels, batch_size=CFG.train_batch_size, \n                         seq_len=CFG.train_seq_len, shuffle=False)\n\n\ninp, tar = next(iter(valid_ds))\nprint(\"# Input:\\n\",inp); print(\"\\n# Labels:\\n\",tar)\n\n# Input:\n {'token_ids': &lt;tf.Tensor: shape=(8, 1024), dtype=int32, numpy=\narray([[    1, 28525,   877, ...,     0,     0,     0],\n       [    1, 45730,   377, ...,     0,     0,     0],\n       [    1,  8489,  7933, ...,     0,     0,     0],\n       ...,\n       [    1, 45730,   377, ...,     0,     0,     0],\n       [    1, 14882,  3148, ...,     0,     0,     0],\n       [    1,  6738,   581, ...,     0,     0,     0]], dtype=int32)&gt;, 'padding_mask': &lt;tf.Tensor: shape=(8, 1024), dtype=bool, numpy=\narray([[ True,  True,  True, ..., False, False, False],\n       [ True,  True,  True, ..., False, False, False],\n       [ True,  True,  True, ..., False, False, False],\n       ...,\n       [ True,  True,  True, ..., False, False, False],\n       [ True,  True,  True, ..., False, False, False],\n       [ True,  True,  True, ..., False, False, False]])&gt;}\n\n# Labels:\n tf.Tensor(\n[[-100   12   12 ... -100 -100 -100]\n [-100   12   12 ... -100 -100 -100]\n [-100   12 -100 ... -100 -100 -100]\n ...\n [-100   12   12 ... -100 -100 -100]\n [-100    2    8 ... -100 -100 -100]\n [-100   12   12 ... -100 -100 -100]], shape=(8, 1024), dtype=int32)\n\n\n2024-04-03 01:43:30.529236: W tensorflow/core/kernels/data/cache_dataset_ops.cc:858] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.\n\n\n\nclass CrossEntropy(keras.losses.SparseCategoricalCrossentropy):\n    def __init__(self, ignore_class=-100, reduction=None, **args):\n        super().__init__(reduction=reduction, **args)\n        self.ignore_class = ignore_class\n\n    def call(self, y_true, y_pred):\n        y_true = ops.reshape(y_true, [-1])\n        y_pred = ops.reshape(y_pred, [-1, CFG.num_labels])\n        loss = super().call(y_true, y_pred)\n        if self.ignore_class is not None:\n            valid_mask = ops.not_equal(\n                y_true, ops.cast(self.ignore_class, y_pred.dtype)\n            )\n            loss = ops.where(valid_mask, loss, 0.0)\n            loss = ops.sum(loss)\n            loss /= ops.maximum(ops.sum(ops.cast(valid_mask, loss.dtype)), 1)\n        else:\n            loss = ops.mean(loss)\n        return loss\n\n\nclass FBetaScore(keras.metrics.FBetaScore):\n    def __init__(self, ignore_classes=[-100, 12], average=\"micro\", beta=5.0,\n                 name=\"f5_score\", **args):\n        super().__init__(beta=beta, average=average, name=name, **args)\n        self.ignore_classes = ignore_classes or []\n\n    def update_state(self, y_true, y_pred, sample_weight=None):\n        y_true = ops.convert_to_tensor(y_true, dtype=self.dtype)\n        y_pred = ops.convert_to_tensor(y_pred, dtype=self.dtype)\n        \n        y_true = ops.reshape(y_true, [-1])\n        y_pred = ops.reshape(y_pred, [-1, CFG.num_labels])\n            \n        valid_mask = ops.ones_like(y_true, dtype=self.dtype)\n        if self.ignore_classes:\n            for ignore_class in self.ignore_classes:\n                valid_mask &= ops.not_equal(y_true, ops.cast(ignore_class, y_pred.dtype))\n        valid_mask = ops.expand_dims(valid_mask, axis=-1)\n        \n        y_true = ops.one_hot(y_true, CFG.num_labels)\n        \n        if not self._built:\n            self._build(y_true.shape, y_pred.shape)\n\n        threshold = ops.max(y_pred, axis=-1, keepdims=True)\n        y_pred = ops.logical_and(\n            y_pred &gt;= threshold, ops.abs(y_pred) &gt; 1e-9\n        )\n\n        y_pred = ops.cast(y_pred, dtype=self.dtype)\n        y_true = ops.cast(y_true, dtype=self.dtype)\n        \n        tp = ops.sum(y_pred * y_true * valid_mask, self.axis)\n        fp = ops.sum(y_pred * (1 - y_true) * valid_mask, self.axis)\n        fn = ops.sum((1 - y_pred) * y_true * valid_mask, self.axis)\n            \n        self.true_positives.assign_add(tp)\n        self.false_positives.assign_add(fp)\n        self.false_negatives.assign_add(fn)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project Title",
+    "section": "",
+    "text": "Add project abstract here."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Project Title",
+    "section": "",
+    "text": "Add project abstract here."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This project was developed by [KG Competitors] For INFO 523 - Data Mining and Discovery at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nRemi Hendershott: First year Master’s student in Information Science with focus on Human Computer Interaction, with end goal being working in UX/UI Design.\nMaksim Kulik: One sentence description of Team member 2 (e.g., year, major, etc.).\nPriom Mahmud: One sentence description of Team member 3 (e.g., year, major, etc.).\nKommareddy Monica Tejaswi: One sentence description of Team member 4 (e.g., year, major, etc.).\nSurya Vardhan Dama:\nGorantla Sai Laasya:\nShashank Yadav: 2nd year PhD Student, Biomedical Engineering"
+  },
+  {
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Personal Data Detection",
+    "section": "",
+    "text": "import numpy as np\nimport seaborn as sns\nfrom zipfile import ZipFile\nimport json\nimport pandas as pd\n\nsns.set(font_scale = 1.25)\nsns.set_style(\"white\")"
+  },
+  {
+    "objectID": "proposal.html#dataset",
+    "href": "proposal.html#dataset",
+    "title": "Personal Data Detection",
+    "section": "Dataset",
+    "text": "Dataset\nGitHub does not allow files over 100 mb, so we store the compressed version of the dataset and decompress it temporarily to show what the data looks like.\n\nwith ZipFile(\"data/essays.zip\", 'r') as z: \n    z.extractall(path=\"data/temp\")\n\nJson is not the most convenient format for displaying information, so we need to transform it into a DataFrame. To convey what the data looks like, we will transorm the dataset into a csv file and display it. It’s important to note that the central part of the dataset are the tokens (simplified word forms) that can carry one of the following labels:\n\nO - Not a part of an entity constituting personal information\nNAME_STUDENT - The full or partial name of a student that is not necessarily the author of the essay. This excludes instructors, authors, and other person names.\nEMAIL - A student’s email address.\nUSERNAME - A student’s username on any platform.\nID_NUM - A number or sequence of characters that could be used to identify a student, such as a student ID or a social security number.\nPHONE_NUM - A phone number associated with a student.\nURL_PERSONAL - A URL that might be used to identify a student.\nSTREET_ADDRESS - A full or partial street address that is associated with the student, such as their home address.\n\nToken labels are presented in BIO (Beginning, Inner, Outer) format. The PII type is prefixed with “B-” when it is the beginning of an entity. If the token is a continuation of an entity, it is prefixed with “I-”. Tokens that are not PII are labeled “O”.\nAdditionally, each label can be prefaced by either B or I, which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as “O”, meaning they do not constitute PII. For display purposes, we will only select those tokens and their labels that do constitute personal information.\nThe code for displaying json data is adapted from medium.com/@nslhnyldz\n\ndata = json.load(open('data/temp/train.json'))\n\nlabels = []\ntokens = []\nfor i in data:\n    labels.extend([j for j in i['labels'] if j!='O'])\n    tokens.extend([k for j, k in zip(i['labels'],i['tokens']) if j!='O'])\n\ndata = pd.DataFrame({'labels':labels,'tokens':tokens})\ndata.sample(n=10)\n\n\n\n\n\n\n\n\nlabels\ntokens\n\n\n\n\n2699\nB-NAME_STUDENT\nCristiane\n\n\n2\nB-NAME_STUDENT\nNathalie\n\n\n1269\nB-NAME_STUDENT\nCarlos\n\n\n1710\nI-NAME_STUDENT\nFarrag\n\n\n626\nB-NAME_STUDENT\nMd\n\n\n1903\nI-NAME_STUDENT\nMabunda\n\n\n2387\nB-NAME_STUDENT\nDulce\n\n\n1374\nI-NAME_STUDENT\nCamilo\n\n\n721\nB-NAME_STUDENT\nSajid\n\n\n1762\nI-NAME_STUDENT\nMondal\n\n\n\n\n\n\n\nThe histogram below shows how frequently we see each of the labels in our dataset. Some PII categories are underrepresented, so we may eventually need to source additional data to achieve better model performance.\n\ndata_copy = data.copy()\n\nhist = sns.countplot(data=data_copy, x=\"labels\", order=data['labels'].value_counts().index)\nlabels = hist.set(xlabel =\"Label\", ylabel = \"Number of occurences\", title ='Label frequency')\n\nhist.tick_params(axis='x', labelrotation = 70)\n\n\n\n\n\n\n\n\nWe can also view the full entities, and not just separate tokens. For that we would remove the labels prefixes and merge adjacent PII entities that follow a prefix pattern “B-I-I …”.\n\ndef transform_dataframe(df):\n    new_rows = []\n    current_entity = ''\n    current_label = ''\n    for index, row in df.iterrows():\n        label = row['labels']\n        token = row['tokens']\n        if label.startswith('B-'):\n            if current_entity != '':\n                new_rows.append({'entity': current_entity, 'label': current_label})\n            current_entity = token\n            current_label = label[2:]\n        elif label.startswith('I-'):\n            current_entity += ' ' + token\n    if current_entity != '':\n        new_rows.append({'entity': current_entity, 'label': current_label})\n    return pd.DataFrame(new_rows)\n\ntransformed_df = transform_dataframe(data)\ntransformed_df.sample(n=10)\n\n\n\n\n\n\n\n\nentity\nlabel\n\n\n\n\n989\nSachin Cordova\nNAME_STUDENT\n\n\n0\nNathalie Sylla\nNAME_STUDENT\n\n\n823\nRavinder Pal\nNAME_STUDENT\n\n\n1123\nCobus Mpanza\nNAME_STUDENT\n\n\n75\nFatima\nNAME_STUDENT\n\n\n1426\nTaher\nNAME_STUDENT\n\n\n574\nnbarker@hotmail.com\nEMAIL\n\n\n474\nKarina Starks\nNAME_STUDENT\n\n\n1564\nAna Gonzalez\nNAME_STUDENT\n\n\n1388\nRene Brown\nNAME_STUDENT\n\n\n\n\n\n\n\nOur dataset comes from the Kaggle competition we are competeing in, and it consists of around 22,000 essays submitted by students, all of which were written in response to a single assignment prompt, which required students to apply course concepts to a real-world scenario. We selected this dataset/competition because certain team members possess experience in NLP tasks, and it presents an opportunity to impart new skills to the rest of the team while tackling a tangible problem aligned with Kaggle’s objective of detecting personally identifiable information (PII) within these essays.\nTo safeguard student privacy, original PII in the dataset has been substituted with surrogate identifiers of similar types using a partially automated procedure. 70% of essays have been set aside for the test set, resulting in our team using other datasets to supplement our work for this project. (Supplemental dataset search is in progress).\nThe competition data is provided in JSON format, containing various components such as a document identifier, the complete essay text, a token list, details about whitespace, and token annotations. The documents underwent tokenization using the SpaCy English tokenizer."
+  },
+  {
+    "objectID": "proposal.html#questions",
+    "href": "proposal.html#questions",
+    "title": "Personal Data Detection",
+    "section": "Questions",
+    "text": "Questions\n\nCan we develop a model that successfully detects personally identifiable information (PII) in student writing?\nHow can we evaluate the model’s performance effectively? Which metrics are most appropriate for PII detection tasks?"
+  },
+  {
+    "objectID": "proposal.html#analysis-plan",
+    "href": "proposal.html#analysis-plan",
+    "title": "Personal Data Detection",
+    "section": "Analysis plan",
+    "text": "Analysis plan\n\nProblem Introduction\nOur team is participating in a Kaggle Competition with the higher end goal and objective being to create a model capable of detecting personally identifiable information (PII) within student writing. Generally, text classification tasks are focussed towards sentence classification. However, our task focusses on word classification, where a word appearing in some text belongs to one of the predefined categories similar to a multiclass classification problem. This formulation is also called, “Named Entity Recognition”.\n\n\nProblem formulation\n\nData Processing: Since, computational models do not understand raw text, we will tokenize text using a language model tokenizer which would convert the words it into integers for model compatibility, adding special tokens like [CLS], [SEP], and [PAD] for enhanced input handling. Subsequently, each token would be mapped to a n-dimensional vector representation. Leveraging the keras-NLP and tensorflow’s tf.data.Dataset function, we will create separate data loaders for training and validation.\nModel Training: We will be using language models such as DeBERTa, Roberta etc which are transformer based neural language models having two distinct features. The first is it’s disentangled attention mechanism which involves representing each word with two vectors, one encoding its content and the other its position, and computing attention weights between words using disentangled matrices based on their content and relative positions. The second is it’s improved mask decoder, which replaces the output softmax layer to predict masked tokens during model training. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction.\n\nTraining will be conditionally executed based on the CFG.train flag (as mentioned in the jupyter notebook), with progress monitored through epoch updates.\n\nEvaluation: Validation data will undergo similar preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference.\nExample: Under our GitHub repository, under the folder “analysis”, a jupyter notebook is available which contains data and task description alongwith a DeBERTa model run for our first attempt at creating a model to detect PII in student writing."
+  },
+  {
+    "objectID": "proposal.html#plan-of-attack",
+    "href": "proposal.html#plan-of-attack",
+    "title": "Personal Data Detection",
+    "section": "Plan of Attack",
+    "text": "Plan of Attack\n\n\n\n\n\n\n\n\n\n\n\nTask Name\nStatus\nAssignee\nDue\nPriority\nSummary\n\n\n\n\nProposal Description\nCompleted\nRemi Hendershott\n03 Apr 2024\nModerate\nConcise summary outlining the main idea of a proposal\n\n\nDataset\nCompleted\nMakism Kulki\n03 Apr 2024\nModerate\nUploading and Loading the Dataset\n\n\nQuestions\nCompleted\nEveryone\n03 Apr 2024\nModerate\nTeam consolidates findings to generate comprehensive questions aimed at exploring deeper insights\n\n\nAnalysis\nIn progress\nMonica Tejaswi, Remi Hendershott, G Sai Laasya, Shashank Yadav\n08 Apr 2024\nModerate\nTeam consolidates findings to generate comprehensive questions aimed at exploring deeper insights\n\n\nDeBERTA model\nCompleted\nShashank Yadav\n08 Apr 2024\nModerate\nCreated the jupyter notebook which contains data and task description alongwith a model run\n\n\nProposal Peer Review\nCompleted\nEveryone\n03 Apr 2024\nModerate\nReviewing Other Teams\n\n\nRevising Proposal\nCompleted\nEveryone\n08 Apr 2024\nModerate\nRevising proposal after getting constructive feedback from peers.\n\n\nProposal Instructor Review\nIn Progress\nEveryone\n08 Apr 2024\nModerate\nAttain feedback on proposal from Instructor.\n\n\nCode Peer Review\nUpcoming\nEveryone\n01 May 2024\nModerate\nReviewing Other Teams’ Code in class together.\n\n\nWrite-Up\nIn progress\nEveryone\n06 May 2024\nHigh\nCompleting a detailed written document explaining our project, our model, data visualizations of our code chunks and results, as well as our conclusion and findings.\n\n\nPresentation\nIn progress\nEveryone\n06 May 2024\nHigh\nCreating a short, but informative slideshow to present our project and model results to the class."
+  }
+]
