@@ -150,6 +150,8 @@ We will implement a robust data processing pipeline and model training approach.
 
 -   **\_freeze/:** houses frozen environment files that contain detailed information about the project's environment setup and dependencies.
 
+- **\_analysis/:** Contains the jupyter notebook of our analysis plan of the project.
+
 -   **data/:** designated for storing essential data files crucial for the project's operations, including input files, datasets, and other vital data resources.
 
 -   **images/:** functioning as a central repository for visual assets utilized across the project, such as diagrams, charts, and screenshots, this directory houses essential visual components essential for project documentation and presentation purposes.
