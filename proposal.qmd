@@ -53,7 +53,9 @@ Json is not the most convenient format for displaying information, so we need to
 - URL_PERSONAL - A URL that might be used to identify a student.
 - STREET_ADDRESS - A full or partial street address that is associated with the student, such as their home address.
 
-Additionally, each label can be prefaced by either B or I, which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as "O", meaning they do not constitute PII. For display purposes, we will only select those tokens and their labels that do constitute personal information.
+Token labels are presented in BIO (Beginning, Inner, Outer) format. The PII type is prefixed with “B-” when it is the beginning of an entity. If the token is a continuation of an entity, it is prefixed with “I-”. Tokens that are not PII are labeled “O”.
+
+Additionally, each label can be prefaced by either B or I, which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as "O", meaning they do not constitute PII. For display purposes, we will only select those tokens and their labels that do constitute personal information. 
 
 *The code for displaying json data is adapted from medium.com/@nslhnyldz*
 ```{python}
@@ -138,10 +140,15 @@ We will implement a robust data processing pipeline and model training approach.
 | Task Name | Status | Assignee | Due | Priority | Summary | 
 | ----------| -------|----------|-----|----------|---------|
 | Proposal Description | Completed | Remi Hendershott | 03 Apr 2024 | Moderate |  Concise summary outlining the main idea of a proposal |
-| Dataset | In progress | Makism Kulki | 03 Apr 2024 | Moderate | Uploading and Loading the Dataset |
-| Questions | In progress | Everyone | 03 Apr 2024 | Moderate |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-| Analysis | In progress | Monica Tejaswi, Remi Hendershott, G Sai Laasya | 03 Apr 2024 | Moderate|  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-|Proposal Peer Review | Completed | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
+| Dataset | Completed | Makism Kulki | 03 Apr 2024 | Moderate | Uploading and Loading the Dataset |
+| Questions | Completed | Everyone | 03 Apr 2024 | Moderate |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
+| Analysis | In progress | Monica Tejaswi, Remi Hendershott, G Sai Laasya | 08 Apr 2024 | Moderate|  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
+| Proposal Peer Review | Completed | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
+| Revising Proposal | Completed | Everyone | 08 Apr 2024 | Moderate | Revising proposal after getting constructive feedback from peers. |
+| Proposal Instructor Review | In Progress | Everyone | 08 Apr 2024 | Moderate | Attain feedback on proposal from Instructor.|
+| Code Peer Review | Upcoming | Everyone | 01 May 2024 | Moderate | Reviewing Other Teams' Code in class together. |
+| Write-Up | In progress | Everyone | 06 May 2024 | High | Completing a detailed written document explaining our project, our model, data visualizations of our code chunks and results, as well as our conclusion and findings. |
+| Presentation | In progress | Everyone | 06 May 2024 | High | Creating a short, but informative slideshow to present our project and model results to the class. |
 
 # Repo Organization
 -   **.github/:** specifically designated for GitHub-related files, including workflows, actions, and templates customized for managing issues.
