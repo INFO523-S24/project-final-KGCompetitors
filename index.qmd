@@ -1,11 +1,11 @@
 ---
-title: "Project Title"
+title: "Personal Data Detection"
 subtitle: "INFO 523 - Project Final"
 author: 
-  - name: "Team name - Team member 1, Team member 2,..."
+  - name: "KG Competitors"
     affiliations:
       - name: "School of Information, University of Arizona"
-description: "Project description"
+description: "Our team is participating in a Kaggle Competition with the higher objective being to create a model capable of detecting personally identifiable information (PII) within student writing, and a secondary goal of evaluating and comparing our models for efficiency to identify the best model."
 format:
    html:
     code-tools: true
@@ -20,4 +20,5 @@ jupyter: python3
 
 ## Abstract
 
-Add project abstract here.
+Our team is participating in a Kaggle competition in which the primary goal is to develop a model capable of detecting personally identifiable information (PII) in student writing. PII creates significant obstacles to the analysis and creation of publicly accessible datasets designed to enhance education, as sharing such data could expose students to potential risks. To address these risks, educational data must be thoroughly screened and cleansed of PII before it is publicly released, a task that could be optimized with data science techniques. 
+Typically, text classification tasks involve categorizing entire sentences. However, our task focuses on word-level classification, where each word in a text belongs to one of several predefined categories, akin to a multiclass classification problem. This approach is commonly known as 'Named Entity Recognition'. Our process involved creating and running three DeBERTa models of various sizes (extra small, small, and large) to solve the Kaggle objective, while being able to compare our three models and determine which one works best.
