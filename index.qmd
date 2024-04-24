@@ -22,3 +22,25 @@ jupyter: python3
 
 Our team is participating in a Kaggle competition in which the primary goal is to develop a model capable of detecting personally identifiable information (PII) in student writing. PII creates significant obstacles to the analysis and creation of publicly accessible datasets designed to enhance education, as sharing such data could expose students to potential risks. To address these risks, educational data must be thoroughly screened and cleansed of PII before it is publicly released, a task that could be optimized with data science techniques. 
 Typically, text classification tasks involve categorizing entire sentences. However, our task focuses on word-level classification, where each word in a text belongs to one of several predefined categories, akin to a multiclass classification problem. This approach is commonly known as 'Named Entity Recognition'. Our process involved creating and running three DeBERTa models of various sizes (extra small, small, and large) to solve the Kaggle objective, while being able to compare our three models and determine which one works best.
+
+## Questions
+
+1. Can we develop a model that successfully detects personally identifiable information (PII) in student writing?
+2. How can we evaluate the model's performance effectively? Which metrics are most appropriate for PII detection tasks? 
+
+## Dataset
+
+## Analysis Plan
+
+### Model 1: Extra Small DeBERTa 
+
+### Model 2: Small DeBERTa
+
+### Model 3: Large DeBERTa
+
+## Results & Conclusion
+
+
+# References
+
+\[1\] Our Kaggle Competition Info can be found here: <https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data/overview>
