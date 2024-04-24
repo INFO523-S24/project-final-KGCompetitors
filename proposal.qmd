@@ -155,11 +155,11 @@ Training will be conditionally executed based on the `CFG.train` flag (as mentio
 | Proposal Description | Completed | Remi Hendershott | 03 Apr 2024 | Moderate |  Concise summary outlining the main idea of a proposal |
 | Dataset | Completed | Makism Kulki | 03 Apr 2024 | Moderate | Uploading and Loading the Dataset |
 | Questions | Completed | Everyone | 03 Apr 2024 | Moderate |  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
-| Analysis | In progress | Monica Tejaswi, Remi Hendershott, G Sai Laasya, Shashank Yadav | 08 Apr 2024 | Moderate|  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
+| Analysis | Completed | Monica Tejaswi, Remi Hendershott, G Sai Laasya, Shashank Yadav | 08 Apr 2024 | Moderate|  Team consolidates findings to generate comprehensive questions aimed at exploring deeper insights |
 | DeBERTA model | Completed | Shashank Yadav | 08 Apr 2024 | Moderate | Created the jupyter notebook which contains data and task description alongwith a model run |
 | Proposal Peer Review | Completed | Everyone | 03 Apr 2024 | Moderate | Reviewing Other Teams |
 | Revising Proposal | Completed | Everyone | 08 Apr 2024 | Moderate | Revising proposal after getting constructive feedback from peers. |
-| Proposal Instructor Review | In Progress | Everyone | 08 Apr 2024 | Moderate | Attain feedback on proposal from Instructor.|
+| Proposal Instructor Review | Completed | Everyone | 08 Apr 2024 | Moderate | Attain feedback on proposal from Instructor.|
 | Code Peer Review | Upcoming | Everyone | 01 May 2024 | Moderate | Reviewing Other Teams' Code in class together. |
 | Write-Up | In progress | Everyone | 06 May 2024 | High | Completing a detailed written document explaining our project, our model, data visualizations of our code chunks and results, as well as our conclusion and findings. |
 | Presentation | In progress | Everyone | 06 May 2024 | High | Creating a short, but informative slideshow to present our project and model results to the class. |
