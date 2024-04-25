@@ -11,7 +11,7 @@ This project was developed by **\[KG Competitors\]** For [INFO 523 - Data Mining
 
 -   Maksim Kulik: One sentence description of Team member 2 (e.g., year, major, etc.).
 
--   Priom Mahmud: One sentence description of Team member 3 (e.g., year, major, etc.).
+-   Priom Mahmud: Second year PhD student in Systems and Industrial Engineering.
 
 -   Kommareddy Monica Tejaswi: One sentence description of Team member 4 (e.g., year, major, etc.).
 
