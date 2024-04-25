@@ -142,7 +142,7 @@ Subsequently, each token would be mapped to a n-dimensional  vector representati
 *   Model Training: We will be using language models such as DeBERTa, Roberta etc which are transformer based neural language models having two distinct features. The first is it's disentangled attention mechanism which involves representing each word with two vectors, one encoding its content and the other its position, and computing attention weights between words 
 using disentangled matrices based on their content and relative positions. The second is it's improved mask decoder, which replaces the output softmax layer to predict masked tokens during model training. The model will be trained using CrossEntropy loss, evaluated using the Fβ-score metric, and will utilize a Dense layer with softmax activation for prediction. 
 
-Training will be conditionally executed based on the `CFG.train` flag (as mentioned in the [jupyter notebook](https://github.com/INFO523-S24/project-final-KGCompetitors/blob/main/analysis/deberta_model.ipynb)), with progress monitored through epoch updates. 
+Training will be conditionally executed based on the `CFG.train` flag (as mentioned in the [jupyter notebook](https://github.com/INFO523-S24/project-final-KGCompetitors/blob/main/analysis/01_deberta_v3_extra_small_en.ipynb)), with progress monitored through epoch updates. 
 
 *   Evaluation: Validation data will undergo similar preprocessing for uniform sample sizes and tokenization, with token IDs generated for inference. 
 
@@ -171,7 +171,7 @@ Training will be conditionally executed based on the `CFG.train` flag (as mentio
 
 -   **\_freeze/:** houses frozen environment files that contain detailed information about the project's environment setup and dependencies.
 
-- **\_analysis/:** Contains the jupyter notebook of our analysis plan of the project.
+- **\_analysis/:** Contains the jupyter notebooks of our analysis plan of the project.
 
 -   **data/:** designated for storing essential data files crucial for the project's operations, including input files, datasets, and other vital data resources.
 
