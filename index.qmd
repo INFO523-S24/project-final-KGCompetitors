@@ -17,6 +17,13 @@ execute:
   echo: false
 jupyter: python3
 ---
+## Introduction
+In today's educational environment, analyzing student papers is essential to comprehending learning habits and improving pedagogical strategies. But as digital learning resources proliferate, it is more important than ever to safeguard students' privacy, particularly when it comes to identifying Personally Identifiable Information (PII) in student texts. This requirement motivates our participation in a Kaggle competition on PII detection in student writings, with the goal of creating a solid model for precise PII element recognition and classification in student essays.
+
+This report outlines our strategy, methods, and conclusions for tackling the problem of PII identification in student works. By utilizing cutting-edge Natural Language Processing (NLP) methods, specifically Named Entity Recognition (NER) at the word level, we try to correctly detect instances of personally identifiable information (PII) embedded in student texts. Our objective is twofold: protecting student privacy and facilitating appropriate data use for educational analysis and research.
+
+We walk through our approach, the features of the dataset, and our analytical plan throughout this paper, explaining how we explored several DeBERTa model configurations, training processes, and evaluation criteria. Through thorough performance evaluation and painstaking fine-tuning of these models, we want to achieve the best possible balance between computing efficiency and accuracy. In the end, our results provide useful information for academics and professionals involved in the study of educational data, adding to the current conversation about protecting student privacy and expanding the boundaries of data-driven educational research.
+
 
 ## Abstract
 
