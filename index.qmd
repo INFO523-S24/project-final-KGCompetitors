@@ -59,6 +59,58 @@ Token labels are presented in BIO (Beginning, Inner, Outer) format. The PII type
 Additionally, each label can be prefaced by either B or I, which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as "O", meaning they do not constitute PII. For display purposes, we will only select those tokens and their labels that do constitute personal information. 
 
 
+```{python}
+import plotly.graph_objects as go
+
+# Data for main plot
+categories = ['B-EMAIL', 'B-ID_NUM', 'B-NAME_STUDENT', 'B-PHONE_NUM', 'B-STREET_ADDRESS', 'B-URL_PERSONAL', 'B-USERNAME', 
+           'I-ID_NUM', 'I-NAME_STUDENT', 'I-PHONE_NUM', 'I-STREET_ADDRESS', 'I-URL_PERSONAL']
+all_data = [39, 78, 1365, 6, 2, 110, 6, 1, 1096, 15, 20, 1]
+training_set = [36, 68, 1102, 4, 1, 82, 6, 1, 852, 12, 10, 1]
+test_set = [3, 10, 263, 2, 1, 28, 0, 0, 244, 3, 10, 0]
+
+
+# Create main plot
+fig = go.Figure()
+
+# Add bars for all categories
+fig.add_trace(go.Bar(
+    x = categories,
+    y = all_data,
+    name = 'All data',
+    hovertemplate = '%{x}: %{y}',
+    marker_color = '#074173'
+))
+
+
+fig.add_trace(go.Bar(
+    x = categories,
+    y = training_set,
+    name = 'Training set',
+    hovertemplate = '%{x}: %{y}',
+    marker_color = '#75A47F'
+))
+
+fig.add_trace(go.Bar(
+    x = categories,
+    y = test_set,
+    name = 'Test set',
+    hovertemplate = '%{x}: %{y}',
+    marker_color = '#FF8870'
+))
+
+#  layout
+fig.update_layout(
+    title = 'Classwise distribution of Words ',
+    xaxis_title = 'Categories',
+    yaxis_title = 'Count',
+    barmode = 'group',
+)
+
+# figure
+fig.show()
+```
+
 ## Analysis Plan
 
 - **Methodology**:
@@ -89,6 +141,43 @@ Additionally, each label can be prefaced by either B or I, which is a way to tel
   - The **Extra Small DeBERTa** model offers the fastest inference time but at the cost of lower F5 score.
   - The **Small DeBERTa** model provides a balanced performance with reasonable inference times and improved F5 Score over the extra small variant.
   - The **Large DeBERTa** model achieves the highest F5 score, reflecting its larger model capacity and outperformance.
+
+
+
+```{python}
+  import matplotlib.pyplot as plt
+
+# Your data
+results = [
+    [0.891, 0.932, 0.968],
+    [0.902, 0.935, 0.972],
+    [0.899, 0.932, 0.972],
+    [0.897, 0.934, 0.968],
+    [0.902, 0.934, 0.974],
+    [0.888, 0.935, 0.973],
+    [0.893, 0.932, 0.968],
+    [0.897, 0.931, 0.966],
+    [0.898, 0.936, 0.964],
+    [0.894, 0.929, 0.970]
+]
+
+# Extracting data for each result
+result1 = [r[0] for r in results]
+result2 = [r[1] for r in results]
+result3 = [r[2] for r in results]
+
+# Plotting
+plt.figure(figsize = (6, 5))
+plt.plot(result1, label = 'deberta_v3_extra_small_en', marker = 'o')
+plt.plot(result2, label = 'deberta_v3_small_en', marker = 'o')
+plt.plot(result3, label = 'deberta_v3_large_en', marker = 'o')
+plt.ylabel('F-beta score')
+plt.title('Average F-beta score on test set on three models')
+plt.legend(loc = 'upper left', bbox_to_anchor = (1.02, 1.0))
+plt.grid(True)
+plt.show()
+```
+
 - **Conclusion**:
   - Regarding our research goals and inquiries, we can indeed construct a model capable of accurately detecting personally identifiable information (PII) in student writings. To assess the efficiency of this model, we designed three different models of varying sizes and evaluated their performance to determine which was most effective. We compared their F5 scores and took their inference times into consideration. It became apparent that the large DeBERTa model achieved the highest F5 score, thereby emerging as the most effective model overall. 
   - However, the choice of model depends on the specific needs for efficiency and performance. For limited-resource environments, the Extra Small or Small models are recommended. For maximum accuracy, where resources are plentiful, the Large model is the best choice.
@@ -98,3 +187,4 @@ Additionally, each label can be prefaced by either B or I, which is a way to tel
 ## References
 
 \[1\] Our Kaggle Competition Info can be found here: <https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data/overview>
+
