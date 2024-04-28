@@ -18,6 +18,13 @@ execute:
 jupyter: python3
 ---
 
+```{python}
+#Importing the libraries
+import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
 ## Introduction
 The primary objective of this project is to develop a model capable of detecting personally identifiable information (PII) in student writing. This is crucial because PII presents significant obstacles to creating publicly accessible educational datasets, as it could potentially expose students to various risks. To address these concerns, our team is participating in a Kaggle competition focusing on PII detection in a dataset of approximately 22,000 student essays. Each essay was submitted in response to a single assignment prompt, requiring students to apply course concepts to real-world scenarios. The dataset has been pre-processed to ensure student privacy, with original PII replaced by surrogate identifiers through a partially automated process.
 
@@ -63,17 +70,16 @@ Additionally, each label can be prefaced by either B or I, which is a way to tel
 
 
 ```{python}
-
-import plotly.graph_objects as go
-
 # Data for main plot
 categories = ['B-EMAIL', 'B-ID_NUM', 'B-NAME_STUDENT', 'B-PHONE_NUM', 'B-STREET_ADDRESS', 'B-URL_PERSONAL', 'B-USERNAME', 
            'I-ID_NUM', 'I-NAME_STUDENT', 'I-PHONE_NUM', 'I-STREET_ADDRESS', 'I-URL_PERSONAL']
 all_data = [39, 78, 1365, 6, 2, 110, 6, 1, 1096, 15, 20, 1]
 training_set = [36, 68, 1102, 4, 1, 82, 6, 1, 852, 12, 10, 1]
 test_set = [3, 10, 263, 2, 1, 28, 0, 0, 244, 3, 10, 0]
+
 # Create main plot
 fig = go.Figure()
+
 # Add bars for all categories
 fig.add_trace(go.Bar(
     x = categories,
@@ -144,8 +150,7 @@ fig.show()
 
 ```{python}
 
- import matplotlib.pyplot as plt
-# Your data
+# Results
 results = [
     [0.891, 0.932, 0.968],
     [0.902, 0.935, 0.972],
@@ -162,6 +167,8 @@ results = [
 result1 = [r[0] for r in results]
 result2 = [r[1] for r in results]
 result3 = [r[2] for r in results]
+
+
 # Plotting
 plt.figure(figsize = (6, 5))
 plt.plot(result1, label = 'deberta_v3_extra_small_en', marker = 'o')
