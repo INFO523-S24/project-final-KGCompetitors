@@ -1,9 +1,9 @@
 jupyter
 nbformat
-zipfile
 numpy
 pandas
 matplotlib
 seaborn
-stats
 plotly
+stats
+zipfile
