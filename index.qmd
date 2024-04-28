@@ -147,6 +147,7 @@ fig.show()
 
 
 ```{python}
+
   import matplotlib.pyplot as plt
 
 # Your data
