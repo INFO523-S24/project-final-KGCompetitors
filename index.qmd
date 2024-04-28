@@ -62,6 +62,7 @@ Additionally, each label can be prefaced by either B or I, which is a way to tel
 
 
 ```{python}
+
 import plotly.graph_objects as go
 
 # Data for main plot
@@ -70,11 +71,8 @@ categories = ['B-EMAIL', 'B-ID_NUM', 'B-NAME_STUDENT', 'B-PHONE_NUM', 'B-STREET_
 all_data = [39, 78, 1365, 6, 2, 110, 6, 1, 1096, 15, 20, 1]
 training_set = [36, 68, 1102, 4, 1, 82, 6, 1, 852, 12, 10, 1]
 test_set = [3, 10, 263, 2, 1, 28, 0, 0, 244, 3, 10, 0]
-
-
 # Create main plot
 fig = go.Figure()
-
 # Add bars for all categories
 fig.add_trace(go.Bar(
     x = categories,
@@ -83,8 +81,6 @@ fig.add_trace(go.Bar(
     hovertemplate = '%{x}: %{y}',
     marker_color = '#074173'
 ))
-
-
 fig.add_trace(go.Bar(
     x = categories,
     y = training_set,
@@ -92,7 +88,6 @@ fig.add_trace(go.Bar(
     hovertemplate = '%{x}: %{y}',
     marker_color = '#75A47F'
 ))
-
 fig.add_trace(go.Bar(
     x = categories,
     y = test_set,
@@ -100,7 +95,6 @@ fig.add_trace(go.Bar(
     hovertemplate = '%{x}: %{y}',
     marker_color = '#FF8870'
 ))
-
 #  layout
 fig.update_layout(
     title = 'Classwise distribution of Words ',
@@ -108,7 +102,6 @@ fig.update_layout(
     yaxis_title = 'Count',
     barmode = 'group',
 )
-
 # figure
 fig.show()
 ```
@@ -148,8 +141,7 @@ fig.show()
 
 ```{python}
 
-  import matplotlib.pyplot as plt
-
+ import matplotlib.pyplot as plt
 # Your data
 results = [
     [0.891, 0.932, 0.968],
@@ -163,12 +155,10 @@ results = [
     [0.898, 0.936, 0.964],
     [0.894, 0.929, 0.970]
 ]
-
 # Extracting data for each result
 result1 = [r[0] for r in results]
 result2 = [r[1] for r in results]
 result3 = [r[2] for r in results]
-
 # Plotting
 plt.figure(figsize = (6, 5))
 plt.plot(result1, label = 'deberta_v3_extra_small_en', marker = 'o')
@@ -179,6 +169,8 @@ plt.title('Average F-beta score on test set on three models')
 plt.legend(loc = 'upper left', bbox_to_anchor = (1.02, 1.0))
 plt.grid(True)
 plt.show()
+
+
 ```
 
 - **Conclusion**:
