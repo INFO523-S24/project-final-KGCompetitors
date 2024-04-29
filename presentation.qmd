@@ -1,7 +1,7 @@
 ---
-title: "Project title"
+title: "Personal Data Detection - KG Competitors"
 subtitle: "INFO 523 - Spring 2023 - Project Final"
-author: "Author names"
+author: "Shashank Yadav, Gorantla Sai Laasya, Maksim Kulik, Remi Hendershott, Surya Vardhan Dama, Kommareddy Monica Tejaswi, & Priom Mahmud"
 title-slide-attributes:
   data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
   data-background-size: stretch
@@ -51,33 +51,25 @@ mtcars['speed'] = mtcars['horsepower'] / mtcars['weight']
 penguins = sns.load_dataset('penguins').dropna()
 ```
 
-# Using Quarto for presentations
+## Introduction
 
-## Quarto
+-   Our team is participating in a Kaggle competition in which the primary goal is to develop a model capable of detecting personally identifiable information (PII) in student writing.
+-   Our task focuses on word-level classification, where each word in a text belongs to one of several predefined categories, akin to a multiclass classification problem. This approach is commonly known as ‘Named Entity Recognition’. 
+-   Our process involved creating and running three DeBERTa models of various sizes (extra small, small, and large) to solve the Kaggle objective, while being able to compare our three models and determine which one works best.
 
--   The presentation is created using the Quarto CLI
+## Our Questions to Solve
 
--   `##` sets the start of a new slide
+-   Can we develop a model that successfully detects personally identifiable information (PII) in student writing?
+-   How can we evaluate the model’s performance effectively? Which metrics are most appropriate for PII detection tasks?
 
-## Layouts
+## Dataset
 
-You can use plain text
+-   Approximately 22,000 student essays, with each essay responding to a single assignment prompt, where each word in a text is assigned to one of 13 predefined labels. 
+-   The key variables in the dataset include tokens representing simplified word forms, each associated with these labels.
+-    Each label can be prefaced by either B (beginning) or I (inner), which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as “O”, (outer) meaning they do not constitute PII.
+-   Preprocessing: The text is tokenized using DeBERTa’s tokenizer to ensure that named entities are correctly identified and segmented.
 
-::: columns
-::: {.column width="40%"}
--   or bullet points[^1]
-:::
 
-::: {.column width="60%"}
-or in two columns
-:::
-:::
-
-[^1]: And add footnotes
-
--   like
-
--   this
 
 ## Code
 
@@ -106,62 +98,11 @@ sns.scatterplot(data=penguins, x='flipper_length_mm', y='body_mass_g', hue='spec
 plt.show()
 ```
 
-## Plot and text
 
-::: columns
-::: {.column width="50%"}
--   Some text
-
--   goes here
-:::
-
-::: {.column width="50%"}
-```{python}
-#| warning: false
-#| fig.width: 5.5
-fig, ax = plt.subplots(figsize=(5.5, 5.5 * 0.618))
-sns.boxplot(data=penguins, x='bill_length_mm', y='species', hue='species', ax=ax)
-plt.show()
-```
-:::
-:::
-
-# A new section...
-
-## Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{python}
-penguins.head().to_html()
-```
 
 ## Images
 
 ![Image credit: Danielle Navarro, Percolate.](images/watercolour_sys02_img34_teacup-ocean.png){fig-align="center" width="500"}
 
-## Math Expressions {.smaller}
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. \$\\alpha+\\beta\$ renders $\alpha + \beta$. You can use the display style with double dollar signs:
-
-```         
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
-
-$$
-\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i
-$$
-
-Limitations:
-
-1.  The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-2.  There should not be spaces after the opening `$` or before the closing `$`.
 
 # Wrap up
-
-## Feeling adventurous?
-
--   You are welcomed to use the default styling of the slides. In fact, that's what I expect majority of you will do. You will differentiate yourself with the content of your presentation.
-
--   But some of you might want to play around with slide styling. Some solutions for this can be found at https://quarto.org/docs/presentations/revealjs.
