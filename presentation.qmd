@@ -1,6 +1,6 @@
 ---
 title: "Personal Data Detection - KG Competitors"
-subtitle: "INFO 523 - Spring 2023 - Project Final"
+subtitle: "INFO 523 - Spring 2024 - Project Final"
 author: "Shashank Yadav, Gorantla Sai Laasya, Maksim Kulik, Remi Hendershott, Surya Vardhan Dama, Kommareddy Monica Tejaswi, & Priom Mahmud"
 title-slide-attributes:
   data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
@@ -57,10 +57,12 @@ penguins = sns.load_dataset('penguins').dropna()
 -   Our task focuses on word-level classification, where each word in a text belongs to one of several predefined categories, akin to a multiclass classification problem. This approach is commonly known as ‘Named Entity Recognition’. 
 -   Our process involved creating and running three DeBERTa models of various sizes (extra small, small, and large) to solve the Kaggle objective, while being able to compare our three models and determine which one works best.
 
+
 ## Our Questions to Solve
 
 -   Can we develop a model that successfully detects personally identifiable information (PII) in student writing?
 -   How can we evaluate the model’s performance effectively? Which metrics are most appropriate for PII detection tasks?
+
 
 ## Dataset
 
@@ -68,6 +70,8 @@ penguins = sns.load_dataset('penguins').dropna()
 -   The key variables in the dataset include tokens representing simplified word forms, each associated with these labels.
 -    Each label can be prefaced by either B (beginning) or I (inner), which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as “O”, (outer) meaning they do not constitute PII.
 -   Preprocessing: The text is tokenized using DeBERTa’s tokenizer to ensure that named entities are correctly identified and segmented.
+
+
 
 
 
