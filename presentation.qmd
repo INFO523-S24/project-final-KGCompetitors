@@ -3,7 +3,7 @@ title: "Personal Data Detection - KG Competitors"
 subtitle: "INFO 523 - Spring 2024 - Project Final"
 author: "Shashank Yadav, Gorantla Sai Laasya, Maksim Kulik, Remi Hendershott, Surya Vardhan Dama, Kommareddy Monica Tejaswi, & Priom Mahmud"
 title-slide-attributes:
-  data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
+  data-background-image: images/4419038.jpg
   data-background-size: stretch
   data-background-opacity: "0.7"
   data-slide-number: none
@@ -95,3 +95,12 @@ penguins = sns.load_dataset('penguins').dropna()
 -   The Extra Small DeBERTa model offers the fastest inference time but at the cost of lower F5 score.
 -   The Small DeBERTa model provides a balanced performance with reasonable inference times and improved F5 Score over the extra small variant.
 -   The Large DeBERTa model achieves the highest F5 score, reflecting its larger model capacity and outperformance.
+
+## Conclusions
+
+- Regarding our research goals and inquiries, we can indeed construct a model capable of accurately detecting personally identifiable information (PII) in student writings. To assess the efficiency of this model, we designed three different models of varying sizes and evaluated their performance to determine which was most effective. We compared their F5 scores and took their inference times into consideration. It became apparent that the large DeBERTa model achieved the highest F5 score, thereby emerging as the most effective model overall.
+- However, the choice of model depends on the specific needs for efficiency and performance. For limited-resource environments, the Extra Small or Small models are recommended. For maximum accuracy, where resources are plentiful, the Large model is the best choice.
+
+## References
+
+- For title page image - "https://www.freepik.com/free-vector/fingerprint-concept-illustration_10258681.htm#query=personal%20data&position=49&from_view=keyword&track=ais&uuid=a14f34fb-adf2-45bc-a8f5-ae2b66197593"
