@@ -92,7 +92,6 @@ penguins = sns.load_dataset('penguins').dropna()
 
 ## Results 
 
-Performance Analysis:
 -   The Extra Small DeBERTa model offers the fastest inference time but at the cost of lower F5 score.
 -   The Small DeBERTa model provides a balanced performance with reasonable inference times and improved F5 Score over the extra small variant.
 -   The Large DeBERTa model achieves the highest F5 score, reflecting its larger model capacity and outperformance.
