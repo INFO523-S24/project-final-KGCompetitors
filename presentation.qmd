@@ -51,7 +51,7 @@ mtcars['speed'] = mtcars['horsepower'] / mtcars['weight']
 penguins = sns.load_dataset('penguins').dropna()
 ```
 
-## Introduction
+## Introduction {.smaller}
 
 -   Our team is participating in a Kaggle competition in which the primary goal is to develop a model capable of detecting personally identifiable information (PII) in student writing.
 -   Our task focuses on word-level classification, where each word in a text belongs to one of several predefined categories, akin to a multiclass classification problem. This approach is commonly known as ‘Named Entity Recognition’. 
@@ -64,7 +64,7 @@ penguins = sns.load_dataset('penguins').dropna()
 -   How can we evaluate the model’s performance effectively? Which metrics are most appropriate for PII detection tasks?
 
 
-## Dataset
+## Dataset {.smaller}
 
 -   Approximately 22,000 student essays, with each essay responding to a single assignment prompt, where each word in a text is assigned to one of 13 predefined labels. 
 -   The key variables in the dataset include tokens representing simplified word forms, each associated with these labels.
