@@ -72,41 +72,27 @@ penguins = sns.load_dataset('penguins').dropna()
 -   Preprocessing: The text is tokenized using DeBERTa’s tokenizer to ensure that named entities are correctly identified and segmented.
 
 
+## Model 1: Extra Small DeBERTa
 
+-   Configuration: DeBERTa-v3 Extra Small - a 70.68 Million parameter model.
+-   Training Details: Tuned with a smaller batch size due to resource constraints, focusing on maximizing model efficiency.
+-   Expected Advantage: Lower computational requirements, making it suitable for environments with strict resource limitations.
 
+## Model 2: Small DeBERTa
 
-## Code
+-   Configuration: DeBERTa-v3 Small - a 141.30 Million parameter model.
+-   Training Details: Balance between computational demand and performance, using a moderate batch size and learning rate.
+-   Expected Advantage: Expected to perform better than the extra small model with manageable resource use.
 
-```{python}
-from sklearn.linear_model import LinearRegression
-import statsmodels.api as sm
-import pandas as pd
+## Model 3: Large DeBERTa
 
-# Fit a linear regression model
-X = mtcars[['speed']]
-y = mtcars['mpg']
-model = LinearRegression().fit(X, y)
+-   Configuration: DeBERTa-v3 Large - a 434.01 Million parameter model
+-   Training Details: Utilizes larger batch sizes and more extended training periods to exploit the model’s capacity fully.
+-   Expected Advantage: Highest accuracy and performance, suitable for scenarios where computational resources are less of a constraint.
 
-# Summary of the model
-X2 = sm.add_constant(X)
-est = sm.OLS(y, X2)
-est2 = est.fit()
-print(est2.summary())
-```
+## Results 
 
-## Plots
-
-```{python}
-penguins['species'] = penguins['species'].apply(lambda x: "Adelie" if x == "Adelie" else "Other")
-sns.scatterplot(data=penguins, x='flipper_length_mm', y='body_mass_g', hue='species')
-plt.show()
-```
-
-
-
-## Images
-
-![Image credit: Danielle Navarro, Percolate.](images/watercolour_sys02_img34_teacup-ocean.png){fig-align="center" width="500"}
-
-
-# Wrap up
+Performance Analysis:
+-   The Extra Small DeBERTa model offers the fastest inference time but at the cost of lower F5 score.
+-   The Small DeBERTa model provides a balanced performance with reasonable inference times and improved F5 Score over the extra small variant.
+-   The Large DeBERTa model achieves the highest F5 score, reflecting its larger model capacity and outperformance.
