@@ -19,6 +19,7 @@ format:
     transition: concave
     background-transition: fade
     scrollable: true
+    logo: images/icons8-competition-64.png
   
 editor: visual
 jupyter: python3
@@ -163,8 +164,9 @@ fig.show()
 
 ## References
 
-- [1] Our Kaggle Competition Info can be found here: https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data/overview
-- For title page image - https://www.freepik.com/free-vector/fingerprint-concept-illustration_10258681.htm#query=personal%20data&position=49&from_view=keyword&track=ais&uuid=a14f34fb-adf2-45bc-a8f5-ae2b66197593
+- [1] Our Kaggle Competition Info can be found here: <https://www.kaggle.com/competitions/pii-detection-removal-from-educational-data/overview>
+- For title page image: <https://www.freepik.com/free-vector/fingerprint-concept-illustration_10258681.htm#query=personal%20data&position=49&from_view=keyword&track=ais&uuid=a14f34fb-adf2-45bc-a8f5-ae2b66197593>
+- our logo: <https://icons8.com/icons/set/competition>
 - Detect Fake Text: KerasNLP [TF/Torch/JAX][Train]
 - Token classification
 - transformer ner baseline [lb 0.854]
