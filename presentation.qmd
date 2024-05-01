@@ -165,8 +165,13 @@ fig.show()
 
 ## Conclusions {.smaller}
 
-- Regarding our research goals and inquiries, we can indeed construct a model capable of accurately detecting personally identifiable information (PII) in student writings. To assess the efficiency of this model, we designed three different models of varying sizes and evaluated their performance to determine which was most effective. We compared their F5 scores and took their inference times into consideration. It became apparent that the large DeBERTa model achieved the highest F5 score, thereby emerging as the most effective model overall.
+- Regarding our research goals and inquiries, we can indeed construct a model capable of accurately detecting personally identifiable information (PII) in student writings. To assess the efficiency of this model, we designed three different models of varying sizes and evaluated their performance to determine which was most effective. 
+- We compared their F5 scores and took their inference times into consideration. It became apparent that the large DeBERTa model achieved the highest F5 score, thereby emerging as the most effective model overall.
 - However, the choice of model depends on the specific needs for efficiency and performance. For limited-resource environments, the Extra Small or Small models are recommended. For maximum accuracy, where resources are plentiful, the Large model is the best choice.
+
+##
+![](images/8188960.jpg){fig-align="center"}
+
 
 ## References {.smaller}
 
@@ -177,6 +182,3 @@ fig.show()
 - Token classification
 - Transformer ner baseline [lb 0.854]
 - Thank You image: <https://www.freepik.com/free-vector/thank-you-concept-illustration_34680609.htm#page=2&query=thank%20you%20gif&position=29&from_view=keyword&track=ais&uuid=e51f94e5-1758-47eb-8cb9-8d69209b8ffd>
-
-##
-![](images/8188960.jpg){fig-align="center"}
