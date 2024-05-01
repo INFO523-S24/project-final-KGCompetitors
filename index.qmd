@@ -53,6 +53,46 @@ We are using a dataset sourced from the Kaggle competition we are participating 
 - **Description**: Contains annotations for named entities (word categories) across 13 categories.
 - **Preprocessing**: The text is tokenized using DeBERTa's tokenizer to ensure that named entities are correctly identified and segmented.
 
+```{python}
+#| label: load-pkgs
+#| message: false
+import numpy as np
+import seaborn as sns
+from zipfile import ZipFile
+import json
+import pandas as pd
+
+sns.set(font_scale = 1.25)
+sns.set_style("white")
+```
+
+GitHub does not allow files over 100 mb, so we store the compressed version of the dataset and decompress it temporarily to show what the data looks like.
+
+```{python}
+#| label: unzip-dataset
+#| message: false
+
+with ZipFile("data/essays.zip", 'r') as z: 
+    z.extractall(path="data/temp")
+```
+
+*The code for displaying json data is adapted from medium.com/@nslhnyldz*
+```{python}
+#| label: load-dataset
+#| message: false
+
+data = json.load(open('data/temp/train.json'))
+
+labels = []
+tokens = []
+for i in data:
+    labels.extend([j for j in i['labels'] if j!='O'])
+    tokens.extend([k for j, k in zip(i['labels'],i['tokens']) if j!='O'])
+
+data = pd.DataFrame({'labels':labels,'tokens':tokens})
+data.sample(n=10)
+```
+
 Json is not the most convenient format for displaying information, so we need to transform it into a DataFrame. To convey what the data looks like, we will transorm the dataset into a csv file and display it. It's important to note that the central part of the dataset are the tokens (simplified word forms) that can carry one of the following labels:
 
 - O - Not a part of an entity constituting personal information
@@ -65,6 +105,33 @@ Json is not the most convenient format for displaying information, so we need to
 - STREET_ADDRESS - A full or partial street address that is associated with the student, such as their home address.
 
 Token labels are presented in BIO (Beginning, Inner, Outer) format. The PII type is prefixed with “B-” when it is the beginning of an entity. If the token is a continuation of an entity, it is prefixed with “I-”. Tokens that are not PII are labeled “O”.
+
+We can also view the full entities, and not just separate tokens. For that we would remove the labels prefixes and merge adjacent PII entities that follow a prefix pattern "B-I-I ...".
+```{python}
+#| label: merge-pii-entities
+#| message: false
+
+def transform_dataframe(df):
+    new_rows = []
+    current_entity = ''
+    current_label = ''
+    for index, row in df.iterrows():
+        label = row['labels']
+        token = row['tokens']
+        if label.startswith('B-'):
+            if current_entity != '':
+                new_rows.append({'entity': current_entity, 'label': current_label})
+            current_entity = token
+            current_label = label[2:]
+        elif label.startswith('I-'):
+            current_entity += ' ' + token
+    if current_entity != '':
+        new_rows.append({'entity': current_entity, 'label': current_label})
+    return pd.DataFrame(new_rows)
+
+transformed_df = transform_dataframe(data)
+transformed_df.sample(n=10)
+```
 
 Additionally, each label can be prefaced by either B or I, which is a way to tell whether a token is the first word of an entity or its continuation. The majority of tokens are labelled as "O", meaning they do not constitute PII. For display purposes, we will only select those tokens and their labels that do constitute personal information. 
 
