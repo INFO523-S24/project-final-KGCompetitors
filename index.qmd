@@ -73,6 +73,7 @@ Additionally, each label can be prefaced by either B or I, which is a way to tel
 # Data for main plot
 categories = ['B-EMAIL', 'B-ID_NUM', 'B-NAME_STUDENT', 'B-PHONE_NUM', 'B-STREET_ADDRESS', 'B-URL_PERSONAL', 'B-USERNAME', 
            'I-ID_NUM', 'I-NAME_STUDENT', 'I-PHONE_NUM', 'I-STREET_ADDRESS', 'I-URL_PERSONAL']
+           
 all_data = [39, 78, 1365, 6, 2, 110, 6, 1, 1096, 15, 20, 1]
 training_set = [36, 68, 1102, 4, 1, 82, 6, 1, 852, 12, 10, 1]
 test_set = [3, 10, 263, 2, 1, 28, 0, 0, 244, 3, 10, 0]
@@ -82,35 +83,37 @@ fig = go.Figure()
 
 # Add bars for all categories
 fig.add_trace(go.Bar(
-    x = categories,
-    y = all_data,
-    name = 'All data',
-    hovertemplate = '%{x}: %{y}',
-    marker_color = '#074173'
+    x=categories,
+    y=all_data,
+    name='All data',
+    hovertemplate='%{x}: %{y}',
+    marker_color='#074173'
 ))
 fig.add_trace(go.Bar(
-    x = categories,
-    y = training_set,
-    name = 'Training set',
-    hovertemplate = '%{x}: %{y}',
-    marker_color = '#75A47F'
+    x=categories,
+    y=training_set,
+    name='Training set',
+    hovertemplate='%{x}: %{y}',
+    marker_color='#75A47F'
 ))
 fig.add_trace(go.Bar(
-    x = categories,
-    y = test_set,
-    name = 'Test set',
-    hovertemplate = '%{x}: %{y}',
-    marker_color = '#FF8870'
+    x=categories,
+    y=test_set,
+    name='Test set',
+    hovertemplate='%{x}: %{y}',
+    marker_color='#FF8870'
 ))
-#  layout
+# layout
 fig.update_layout(
-    title = 'Classwise distribution of Words ',
-    xaxis_title = 'Categories',
-    yaxis_title = 'Count',
-    barmode = 'group',
+    title='Classwise distribution of Words ',
+    xaxis_title='Categories',
+    yaxis_title='Count (log scale)',
+    barmode='group',
+    yaxis_type='log'  # Setting the y-axis to a logarithmic scale
 )
 # figure
 fig.show()
+
 ```
 
 
