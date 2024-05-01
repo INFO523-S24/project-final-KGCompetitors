@@ -73,7 +73,9 @@ penguins = sns.load_dataset('penguins').dropna()
 -   Preprocessing: The text is tokenized using DeBERTa’s tokenizer to ensure that named entities are correctly identified and segmented.
 
 
-### Variables of the Dataset
+
+## Variables of the Dataset
+
 ```{python}
 # Data for main plot
 categories = ['B-EMAIL', 'B-ID_NUM', 'B-NAME_STUDENT', 'B-PHONE_NUM', 'B-STREET_ADDRESS', 'B-URL_PERSONAL', 'B-USERNAME', 
