@@ -24,6 +24,7 @@ execute:
 # Load packages here
 import pandas as pd
 import seaborn as sns
+import plotly.graph_objects as go
 
 ```
 
