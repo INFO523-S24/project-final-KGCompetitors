@@ -170,3 +170,7 @@ fig.show()
 - Detect Fake Text: KerasNLP [TF/Torch/JAX][Train]
 - Token classification
 - transformer ner baseline [lb 0.854]
+- our Thank You image: <https://www.freepik.com/free-vector/thank-you-concept-illustration_34680609.htm#page=2&query=thank%20you%20gif&position=29&from_view=keyword&track=ais&uuid=e51f94e5-1758-47eb-8cb9-8d69209b8ffd>
+
+##
+![](images/8188960.jpg){fig-align="center"}
