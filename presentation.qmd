@@ -131,23 +131,24 @@ fig.update_layout(
 fig.show()
 ```
 
-## Model 1: Extra Small DeBERTa
+## Methodology
 
--   Configuration: DeBERTa-v3 Extra Small - a 70.68 Million parameter model.
--   Training Details: Tuned with a smaller batch size due to resource constraints, focusing on maximizing model efficiency.
--   Expected Advantage: Lower computational requirements, making it suitable for environments with strict resource limitations.
+-   1. **Tokenization**: Tokenize the raw text using the appropriate DeBERTa tokenizer.
+-   2. **Fine-Tuning**: Model are be fine-tuned on the same training set with a very small learning rate 6e-6. KerasNLP python package was used with JAX backed. Models were fine tuned on a Nvidia 4070Ti GPU.
+-   3. **Evaluation**: Assessed each model's performance on the validation set F5-score. In the F5 score, recall is considered five times as important as precision. This means the F5 score is particularly useful in our case where missing out on positive cases (false negatives) is much more problematic than incorrectly labeling negative cases as positive (false positives) since there is a huge class imbalance.
+-   4. **Comparison**: Compared the performance and resource utilization of each model.
 
-## Model 2: Small DeBERTa
 
--   Configuration: DeBERTa-v3 Small - a 141.30 Million parameter model.
--   Training Details: Balance between computational demand and performance, using a moderate batch size and learning rate.
--   Expected Advantage: Expected to perform better than the extra small model with manageable resource use.
+## Model Summary
 
-## Model 3: Large DeBERTa
+| Model Configuration       | Parameters (Millions)  | Training Details    | Expected Advantage     |
+|----------------------------|:----------------------------:|--------------------------|-----------------------|
+| DeBERTa-v3 Extra Small | 70.68 | - smaller batch size <br> - maximize model efficiency    | - lower computational requirements <br> - suitable for limited resources  |
+| DeBERTa-v3 Small    | 141.30 | - moderate batch size <br> - balanced computational load and performance    | - better than extra small model with manageable resource use  |
+| DeBERTa-v3 Large    | 434.01 | - larger batch size <br> - extended training periods    | - Highest accuracy and performance <br> -  suitable for resource-abundant scenarios |
 
--   Configuration: DeBERTa-v3 Large - a 434.01 Million parameter model
--   Training Details: Utilizes larger batch sizes and more extended training periods to exploit the model’s capacity fully.
--   Expected Advantage: Highest accuracy and performance, suitable for scenarios where computational resources are less of a constraint.
+* [DeBERTa-v3](https://huggingface.co/microsoft/deberta-v3-base)
+
 
 ## Results 
 
