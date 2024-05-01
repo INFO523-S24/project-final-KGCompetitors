@@ -9,7 +9,7 @@ This project was developed by **\[KG Competitors\]** For [INFO 523 - Data Mining
 
 -   Remi Hendershott: First year Master's student in Information Science with focus on Human Computer Interaction, with end goal being working in UX/UI Design. 
 
--   Maksim Kulik: One sentence description of Team member 2 (e.g., year, major, etc.).
+-   Maksim Kulik: 1st year Master's student in Human Language Technology
 
 -   Priom Mahmud: Second year PhD student in Systems and Industrial Engineering.
 

@@ -157,6 +157,12 @@ fig.show()
 -   The Small DeBERTa model provides a balanced performance with reasonable inference times and improved F5 Score over the extra small variant.
 -   The Large DeBERTa model achieves the highest F5 score, reflecting its larger model capacity and outperformance.
 
+
+## Results
+
+![](images/violin.png){fig-align="center"}
+
+
 ## Conclusions
 
 - Regarding our research goals and inquiries, we can indeed construct a model capable of accurately detecting personally identifiable information (PII) in student writings. To assess the efficiency of this model, we designed three different models of varying sizes and evaluated their performance to determine which was most effective. We compared their F5 scores and took their inference times into consideration. It became apparent that the large DeBERTa model achieved the highest F5 score, thereby emerging as the most effective model overall.
