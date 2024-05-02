@@ -13,10 +13,10 @@ This project was developed by **\[KG Competitors\]** For [INFO 523 - Data Mining
 
 -   Priom Mahmud: Second year PhD student in Systems and Industrial Engineering.
 
--   Kommareddy Monica Tejaswi: One sentence description of Team member 4 (e.g., year, major, etc.).
+-   Kommareddy Monica Tejaswi: First year Master's student in Data Science.
 
--   Surya Vardhan Dama:
+-   Surya Vardhan Dama:  First year Master's student in Data Science.
 
--   Gorantla Sai Laasya:
+-   Gorantla Sai Laasya:  First year Master's student in Data Science.
 
 -   Shashank Yadav: 2nd year PhD Student, Biomedical Engineering
