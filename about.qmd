@@ -17,6 +17,6 @@ This project was developed by **\[KG Competitors\]** For [INFO 523 - Data Mining
 
 -   Surya Vardhan Dama:  First year Master's student in Data Science.
 
--   Gorantla Sai Laasya:  First year Master's student in Data Science.
+-   Gorantla Sai Laasya:  First year Master's student in Information Science.
 
 -   Shashank Yadav: 2nd year PhD Student, Biomedical Engineering
